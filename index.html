@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordly -Dictionary SPA</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Wordly</h1>
+
+    </header>
+    <main>
+        <!-- 1. Search Bar-->
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Type a word..." aria-label="Search for a word" required />
+            <button type="submit"> Search</button>
+
+        </form>
+        <!-- 2. Status message -->
+        <p id="status-message"></p>
+
+        <!-- 3. Results Card -->
+        <section id="result-card">
+            <h2 id="word-title"></h2>
+            <p id="phonetic-text"></p>
+            <button id="audio-btn" style="display: none;">Listen</button>
+            <button id="favorite-btn" style="display: none;">Save to Favorites</button>
+
+            <div id="definitions-container">
+
+            </div>
+        </section>
+        <section id="favorites-section">
+            <h3>Saved Favorites</h3>
+            <ul id="favorites-list">
+                <li>No saved words yet.</li>
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
